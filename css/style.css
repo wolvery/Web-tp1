@@ -98,7 +98,7 @@ header, section {
       margin: 0; }
 
 .btn {
-  background: #99b0bf;
+  background: #153f59;
   background-image: -webkit-linear-gradient(top, #99b0bf, #37607a);
   background-image: -moz-linear-gradient(top, #99b0bf, #37607a);
   background-image: -ms-linear-gradient(top, #99b0bf, #37607a);
@@ -111,9 +111,10 @@ header, section {
   color: #ffffff;
   font-size: 16px;
   padding: 10px 20px 10px 20px;
-  text-decoration: none; }
+  text-decoration: none;
+  margin-top: 350px; }
   .btn:hover {
-    background: #153f59;
+    background: #99b0bf;
     background-image: -webkit-linear-gradient(top, #153f59, #3498db);
     background-image: -moz-linear-gradient(top, #153f59, #3498db);
     background-image: -ms-linear-gradient(top, #153f59, #3498db);
@@ -147,12 +148,38 @@ header, section {
 #PROJETOS {
   background-image: url("../images/wallG.jpg"); }
 
+#carousell {
+  top: 1000px; }
+
 #CONTATO {
   background-image: url("../images/wallG2.jpg"); }
 
 #CURRICULUM {
-  background-image: url("../images/wallG3.jpg"); }
+  background-image: url("../images/wallG3.jpg");
+  overflow: auto; }
 
+#caixa {
+  position: relative;
+  margin-top: 10%;
+  margin-left: 40%;
+  width: 500px;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+  font-family: cursive;
+  text-shadow: 0px 2px 0.3px #fff;
+  -webkit-animation: myfirst 5s linear 2s infinite alternate;
+  /* Chrome, Safari, Opera */
+  animation: myfirst 5s linear 2s infinite alternate;
+  /* Standard syntax */ }
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes myfirst {
+  50% {
+    background: black; } }
+/* Standard syntax */
+@keyframes myfirst {
+  50% {
+    background: black; } }
 @media all and (max-width: 620px) {
   h1 {
     display: none; }

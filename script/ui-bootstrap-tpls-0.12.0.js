@@ -425,7 +425,9 @@ angular.module('ui.bootstrap.buttons', [])
 angular.module('ui.bootstrap.carousel', ['ui.bootstrap.transition'])
 .controller('CarouselController', ['$scope', '$timeout', '$interval', '$transition', function ($scope, $timeout, $interval, $transition) {
   var self = this,
-    slides = self.slides = $scope.slides = [],
+    slides = self.slides = $scope.slides = [
+    
+  ],
     currentIndex = -1,
     currentInterval, isPlaying;
   self.currentSlide = null;
