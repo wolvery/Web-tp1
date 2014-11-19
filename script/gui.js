@@ -38,10 +38,11 @@
   app.controller('weatherController', function($scope,$http){
 	
 	var time= [];
-	
+	$scope.temp= {};
 	$http.get('http://api.openweathermap.org/data/2.5/weather?q=Belo+Horizonte,BR').success(function(data){
 		this.time=data;
 		});
+	$scope.temp = time.temp - 274;
 	
 	
   });
